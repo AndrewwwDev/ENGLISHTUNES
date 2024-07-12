@@ -1,0 +1,1 @@
+Reproductor de música que proporciona subtítulos en inglés y español. Este reproductor fue creado utilizando tecnologías web como HTML, CSS, JavaScript, Bootstrap, jQuery y Git. Su objetivo es ayudar a los usuarios a mejorar su comprensión del inglés a través de la música, ofreciendo subtítulos en ambos idiomas para facilitar el aprendizaje.
