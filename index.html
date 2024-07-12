@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio Multilingüe</title>
+    <!-- Incluye Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluye Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row w-100">
+            <!-- Columna izquierda (imagen, barra de reproducción y botones) -->
+            <div class="col-md-6 d-flex align-items-center d-flex justify-content-center">
+                <div class="player-wrapper">
+                    <div class="image-wrapper mb-4">
+                        <img src="https://lyufgjyhbygyug.my.canva.site/englishtunes/images/706817236e0f0d4fac1a8bd2ae3586fc.jpg" alt="Imagen de un reproductor de audio multilingüe" class="img-fluid">
+                    </div>
+                    <div class="player-container text-center">
+                        <audio id="audio" controls class="w-100 mb-4">
+                            <source src="audio.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento <code>audio</code>.
+                        </audio>
+                        <div class="controls d-flex justify-content-center">
+                            <button id="prev" class="btn btn-light" aria-label="Reproducir pista anterior"><i class="fas fa-backward"></i></button>
+                            <button id="playPause" class="btn btn-success" aria-label="Reproducir/Pausar"><i class="fas fa-play"></i></button>
+                            <button id="next" class="btn btn-light" aria-label="Reproducir pista siguiente"><i class="fas fa-forward"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna derecha (subtítulos) -->
+            <div class="col-md-6 d-flex align-items-center d-flex justify-content-center">
+                <div class="subtitles text-center">
+                    <div id="subtitle1">Inglés</div>
+                    <div id="subtitle2">Español</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
